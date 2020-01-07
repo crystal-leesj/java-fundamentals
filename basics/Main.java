@@ -21,13 +21,13 @@ public class Main {
   // Write a function called pluralize that accepts a word and a number and returns a string with the word pluralized with an “s” if the number is zero, or greater than one.
   public static String pluralize(String animal, int n) {
     char s = 's';
-    if (n == 1) {
-      return animal;
-    } else if (n > 0) {
+    if (n == 0) {
+      return animal + s;
+    } else if (n > 1) {
       return animal + s;
     }
     else {
-      return animal + s;
+      return animal;
     }
   }
 
