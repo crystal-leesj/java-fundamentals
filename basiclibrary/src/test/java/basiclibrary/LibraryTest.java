@@ -4,6 +4,9 @@
 package basiclibrary;
 
 import org.junit.Test;
+
+import java.util.Locale;
+
 import static org.junit.Assert.*;
 
 public class LibraryTest {
@@ -11,6 +14,14 @@ public class LibraryTest {
         int number = 4;
         int[] result = Library.roll(number);
         assertEquals(number, result.length);
+    }
+
+    @Test public void testRollBetweenOneToSixMethod() {
+        int [] result = Library.roll(3);
+        for (int number : result) {
+            boolean actual = number > 0 && number < 7;
+            assertTrue(actual);
+        }
     }
 
     @Test public void testContainsDuplicatesFalseMethod() {
@@ -25,11 +36,11 @@ public class LibraryTest {
         assertTrue(actual);
     }
 
-    @Test public void testcalCulatingAveragesMethod() {
-        int[] inputArr = {2,4,5,6,8};
-        int actual = Library.calculatingAverages(inputArr);
+    @Test public void testCalculatingAveragesMethod() {
+        int[] inputArr = {2,4,5,6,8,3};
+        float actual = Library.calculatingAverages(inputArr);
         int expected = 5;
-        assertEquals(expected, actual);
+        assertEquals(expected, actual, 0.0001);
     }
 
     @Test public void testArraysOfArraysMethod() {

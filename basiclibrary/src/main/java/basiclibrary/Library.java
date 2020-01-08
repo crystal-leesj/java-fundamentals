@@ -36,14 +36,13 @@ public class Library {
     /*
      * Calculating Averages
      */
-    public static int calculatingAverages(int[] inputArray) {
+    public static float calculatingAverages(int[] inputArray) {
         int total = 0;
-        int avg;
+        float avg;
         for (int i = 0; i < inputArray.length; i++) {
             total = total + inputArray[i];
         }
-        avg = total/(inputArray.length);
-        System.out.println(avg);
+        avg = (float) total/(inputArray.length);
         return avg;
     }
 
