@@ -56,12 +56,11 @@ public class Main {
 
   // REF - https://crunchify.com/how-to-run-a-program-forever-in-java-keep-running-main-thread-continuously/
   private synchronized void clock() {
-    LocalDateTime now = LocalDateTime.now();
-    int hour = now.getHour();
-    int minute = now.getMinute();
-    int second = now.getSecond();
-
 		while (true) {
+      LocalDateTime now = LocalDateTime.now();
+      int hour = now.getHour();
+      int minute = now.getMinute();
+      int second = now.getSecond();
 			System.out.println(String.format("%d:%d:%d", hour, minute, second));
 			try {
 				this.wait(1000);
