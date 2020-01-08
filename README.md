@@ -10,7 +10,7 @@ Java 401 - Labs
 3. Command Line Clock
   - Write a method `clock` that uses Java’s built-in `LocalDateTime` object to constantly print out the current time to the console, second by second. The program should run until someone manually kills it with `CTRL-C` or presses the “stop” button in their IDE. Each time should only be printed once. Your program should detect when the seconds increase and only print something out when the timestamp changes.
  
-[Link to code](https://github.com/crystal-leesj/java-fundamentals/blob/master/basiclibrary/src/main/java/basiclibrary/Library.java)
+[Link to code](https://github.com/crystal-leesj/java-fundamentals/blob/master/basics/Main.java)
 
 ***
 
