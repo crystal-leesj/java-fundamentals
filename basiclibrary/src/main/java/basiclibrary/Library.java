@@ -30,7 +30,39 @@ public class Library {
                 }
             }
         }
+        return false;
     }
 
+    /*
+     * Calculating Averages
+     */
+    public static int calculatingAverages(int[] inputArray) {
+        int total = 0;
+        int avg;
+        for (int i = 0; i < inputArray.length; i++) {
+            total = total + inputArray[i];
+        }
+        avg = total/(inputArray.length);
+        System.out.println(avg);
+        return avg;
+    }
 
+    /*
+     * Arrays of Arrays
+     */
+    public static int arraysOfArrays(int[][] doubleArr) {
+        int lowest = 100;
+        for (int i = 0; i < doubleArr.length; i++) {
+            int total = 0;
+            int avg;
+            for (int j = 0; j < doubleArr[i].length; j++) {
+                total = total + doubleArr[i][j];
+            }
+            avg = total/(doubleArr[i].length);
+            if (avg < lowest) {
+                lowest = avg;
+            }
+        }
+        return lowest;
+    }
 }
