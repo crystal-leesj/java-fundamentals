@@ -3,6 +3,7 @@
  */
 package basiclibrary;
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class Library {
 
@@ -64,4 +65,45 @@ public class Library {
         }
         return lowest;
     }
+
+    /*
+     * Analyzing Weather Data
+     */
+    public static void analyzeWeatherData(int[][] weatherArr){
+//        int[][] weeklyMonthTemperatures = {
+//                {66, 64, 58, 65, 71, 57, 60},
+//                {57, 65, 65, 70, 72, 65, 51},
+//                {55, 54, 60, 53, 59, 57, 61},
+//                {65, 56, 55, 52, 55, 62, 57}
+//        };
+        int lowest = weatherArr[0][0];
+        int highest = weatherArr[0][0];
+        HashSet<Integer> uniqueTemperatures = new HashSet<>();
+
+        for (int i = 0; i < weatherArr.length; i++){
+            for (int j = 0; j < weatherArr[i].length; j++){
+                if(weatherArr[i][j] < lowest){
+                    lowest = weatherArr[i][j];
+                }
+                if(weatherArr[i][j] > highest){
+                    highest = weatherArr[i][j];
+                }
+                uniqueTemperatures.add(weatherArr[i][j]);
+            }
+        }
+
+        System.out.println("High: " + highest);
+        System.out.println("Low: " + lowest);
+
+        for(int i = lowest + 1; i < highest; i++){
+            if(!uniqueTemperatures.contains(i)){
+                System.out.println("Never saw temperature: " + i);
+            }
+        }
+    }
+
+    /*
+     * Tallying Election
+     */
+
 }
