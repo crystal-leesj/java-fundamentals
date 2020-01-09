@@ -39,7 +39,7 @@ public class LibraryTest {
     @Test public void testCalculatingAveragesMethod() {
         int[] inputArr = {2,4,5,6,8,3};
         float actual = Library.calculatingAverages(inputArr);
-        int expected = 5;
+        float expected = (float) 4.6666;
         assertEquals(expected, actual, 0.0001);
     }
 
