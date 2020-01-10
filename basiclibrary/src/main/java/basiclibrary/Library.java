@@ -107,7 +107,6 @@ public class Library {
         HashMap<String, Integer> voteMap = new HashMap<>();
         int mostVotesNum = 0;
         String winner = "";
-        String response = "";
 
         for (String vote : votes){
             if (voteMap.containsKey(vote)){
@@ -118,32 +117,17 @@ public class Library {
         }
 
         for (String key : voteMap.keySet()) {
-            System.out.println("key: " + key);
             if (mostVotesNum < voteMap.get(key)) {
                 mostVotesNum = voteMap.get(key);
                 winner = key;
             }
         }
 
-        response = winner + " received the most votes!";
-        return response;
+        System.out.println(winner + " received the most votes!");
+        return winner;
     }
 
 
-    public static void linter(Path readerFile) {
-        try(BufferedReader reader = Files.newBufferedReader(readerFile)) {
-            int lineNumber = 0
-            String lineText = "";
-            while (lineText != null) {
-                if (!lineText.isEmpty() && !lineText.endsWith("(") && lineText.endsWith())
-                    System.out.println("Line" + lineNumber + " : Missing Semicolon");
-            }
-            lineNumber++
-            lineText = reader.readLine();
-        }
-    }
-    catch(IOException e) {
-        System.out.println(e);
-    }
+
 
 }

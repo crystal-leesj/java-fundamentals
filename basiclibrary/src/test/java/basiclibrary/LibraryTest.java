@@ -80,7 +80,8 @@ public class LibraryTest {
         votes.add("Hedge");
         votes.add("Bush");
 
-        String actual = Library.tally(votes);
+        String winner = Library.tally(votes);
+        String actual = winner + " received the most votes!";
         String expected = "Bush received the most votes!";
         assertEquals(expected, actual);
     }
