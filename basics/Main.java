@@ -11,8 +11,8 @@ public class Main {
     int turtleCount = 0;
     System.out.println("I own " + turtleCount + " " + pluralize("turtle", turtleCount) + ".");
 
-    // flipNHeads(1);
-    flipNHeads(10);
+    flipNHeads(1);
+    // flipNHeads(10);
 
     Main object = new Main();
     object.clock();

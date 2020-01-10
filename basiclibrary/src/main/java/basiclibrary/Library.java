@@ -129,4 +129,21 @@ public class Library {
         return response;
     }
 
+
+    public static void linter(Path readerFile) {
+        try(BufferedReader reader = Files.newBufferedReader(readerFile)) {
+            int lineNumber = 0
+            String lineText = "";
+            while (lineText != null) {
+                if (!lineText.isEmpty() && !lineText.endsWith("(") && lineText.endsWith())
+                    System.out.println("Line" + lineNumber + " : Missing Semicolon");
+            }
+            lineNumber++
+            lineText = reader.readLine();
+        }
+    }
+    catch(IOException e) {
+        System.out.println(e);
+    }
+
 }
