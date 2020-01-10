@@ -45,6 +45,7 @@ int[][] weeklyMonthTemperatures = {
 2. Tallying Election
  - Write a function called `tally` that accepts a List of Strings representing votes and returns one string to show what got the most votes.
  
+[Link to code](https://github.com/crystal-leesj/java-fundamentals/blob/master/basiclibrary/src/main/java/basiclibrary/Library.java)
+
  ***
- 
  
