@@ -6,6 +6,7 @@ package linter;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -15,8 +16,8 @@ public class AppTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Test public void testjavaScriptLinter(){
-        Path file = Paths.get("resources/gates.js");
-        App.javaScriptLinter(file);
+        File pathName = new File("resources/gates.js");
+        App.javaScriptLinter(pathName);
         assertEquals("", outContent.toString());
     }
 }
