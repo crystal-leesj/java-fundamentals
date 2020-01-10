@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb25a84d-47d9-4a2b-8af2-2a3351d194e4" name="Default Changelist" comment="" />
+    <list default="true" id="bb25a84d-47d9-4a2b-8af2-2a3351d194e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/gates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_28_0_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_qual_2_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/linter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/linter.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/linter.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/linter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/linter/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/linter/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/linter/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +35,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -37,7 +68,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.AppTest.testjavaScriptLinter">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linter.App" />
       <module name="linter.main" />
@@ -71,10 +102,27 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="AppTest.testjavaScriptLinter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="linter.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="linter" />
+      <option name="MAIN_CLASS_NAME" value="linter.AppTest" />
+      <option name="METHOD_NAME" value="testjavaScriptLinter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AppTest.testjavaScriptLinter" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.AppTest.testjavaScriptLinter" />
       </list>
     </recent_temporary>
   </component>
@@ -108,22 +156,26 @@
       <screen x="1440" y="-517" width="2560" height="1417" />
     </state>
     <state x="2320" y="-143" key="#Project_Structure/0.23.1440.801/1440.-517.2560.1417@1440.-517.2560.1417" timestamp="1578647191234" />
-    <state width="2518" height="408" key="GridCell.Tab.0.bottom" timestamp="1578653059587">
-      <screen x="1440" y="-517" width="2560" height="1417" />
+    <state width="2518" height="408" key="GridCell.Tab.0.bottom" timestamp="1578653796358">
+      <screen x="1440" y="-517" width="2560" height="1337" />
     </state>
     <state width="2518" height="408" key="GridCell.Tab.0.bottom/0.23.1440.801/1440.-517.2560.1417@1440.-517.2560.1417" timestamp="1578653059587" />
-    <state width="2518" height="408" key="GridCell.Tab.0.center" timestamp="1578653059585">
-      <screen x="1440" y="-517" width="2560" height="1417" />
+    <state width="2518" height="408" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-517.2560.1337@1440.-517.2560.1337" timestamp="1578653796358" />
+    <state width="2518" height="408" key="GridCell.Tab.0.center" timestamp="1578653796358">
+      <screen x="1440" y="-517" width="2560" height="1337" />
     </state>
     <state width="2518" height="408" key="GridCell.Tab.0.center/0.23.1440.801/1440.-517.2560.1417@1440.-517.2560.1417" timestamp="1578653059585" />
-    <state width="2518" height="408" key="GridCell.Tab.0.left" timestamp="1578653059585">
-      <screen x="1440" y="-517" width="2560" height="1417" />
+    <state width="2518" height="408" key="GridCell.Tab.0.center/0.23.1440.877/1440.-517.2560.1337@1440.-517.2560.1337" timestamp="1578653796358" />
+    <state width="2518" height="408" key="GridCell.Tab.0.left" timestamp="1578653796357">
+      <screen x="1440" y="-517" width="2560" height="1337" />
     </state>
     <state width="2518" height="408" key="GridCell.Tab.0.left/0.23.1440.801/1440.-517.2560.1417@1440.-517.2560.1417" timestamp="1578653059585" />
-    <state width="2518" height="408" key="GridCell.Tab.0.right" timestamp="1578653059586">
-      <screen x="1440" y="-517" width="2560" height="1417" />
+    <state width="2518" height="408" key="GridCell.Tab.0.left/0.23.1440.877/1440.-517.2560.1337@1440.-517.2560.1337" timestamp="1578653796357" />
+    <state width="2518" height="408" key="GridCell.Tab.0.right" timestamp="1578653796358">
+      <screen x="1440" y="-517" width="2560" height="1337" />
     </state>
     <state width="2518" height="408" key="GridCell.Tab.0.right/0.23.1440.801/1440.-517.2560.1417@1440.-517.2560.1417" timestamp="1578653059586" />
+    <state width="2518" height="408" key="GridCell.Tab.0.right/0.23.1440.877/1440.-517.2560.1337@1440.-517.2560.1337" timestamp="1578653796358" />
     <state width="2518" height="501" key="GridCell.Tab.1.bottom" timestamp="1578650510440">
       <screen x="1440" y="-517" width="2560" height="1417" />
     </state>
