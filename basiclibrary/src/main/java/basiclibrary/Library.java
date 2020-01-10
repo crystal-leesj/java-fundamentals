@@ -3,7 +3,9 @@
  */
 package basiclibrary;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 public class Library {
 
@@ -69,23 +71,18 @@ public class Library {
     /*
      * Analyzing Weather Data
      */
-    public static void analyzeWeatherData(int[][] weatherArr){
-//        int[][] weeklyMonthTemperatures = {
-//                {66, 64, 58, 65, 71, 57, 60},
-//                {57, 65, 65, 70, 72, 65, 51},
-//                {55, 54, 60, 53, 59, 57, 61},
-//                {65, 56, 55, 52, 55, 62, 57}
-//        };
+    public static String analyzeWeather(int[][] weatherArr){
         int lowest = weatherArr[0][0];
         int highest = weatherArr[0][0];
         HashSet<Integer> uniqueTemperatures = new HashSet<>();
+        String response = "";
 
         for (int i = 0; i < weatherArr.length; i++){
             for (int j = 0; j < weatherArr[i].length; j++){
-                if(weatherArr[i][j] < lowest){
+                if (weatherArr[i][j] < lowest){
                     lowest = weatherArr[i][j];
                 }
-                if(weatherArr[i][j] > highest){
+                if (weatherArr[i][j] > highest){
                     highest = weatherArr[i][j];
                 }
                 uniqueTemperatures.add(weatherArr[i][j]);
@@ -95,15 +92,39 @@ public class Library {
         System.out.println("High: " + highest);
         System.out.println("Low: " + lowest);
 
-        for(int i = lowest + 1; i < highest; i++){
-            if(!uniqueTemperatures.contains(i)){
-                System.out.println("Never saw temperature: " + i);
+        for (int i = lowest + 1; i < highest; i++){
+            if (!uniqueTemperatures.contains(i)){
+                response += "\nNever saw temperature: " + i;
             }
         }
+        return response;
     }
 
     /*
      * Tallying Election
      */
+    public static String tally(List<String> votes) {
+        HashMap<String, Integer> voteMap = new HashMap<>();
+        int mostVotesNum = 0;
+        String winner = "";
+
+        for (String vote : votes){
+            if (voteMap.containsKey(vote)){
+                voteMap.put(vote, voteMap.get(vote) + 1);
+            } else {
+                voteMap.put(vote, 1);
+            }
+        }
+
+        for (String key : voteMap.keySet()) {
+            if (mostVotesNum < voteMap.get(key)) {
+                mostVotesNum = voteMap.get(key);
+                winner = key;
+            }
+        }
+
+        System.out.println(winner + " received the most votes!");
+        return winner;
+    }
 
 }
