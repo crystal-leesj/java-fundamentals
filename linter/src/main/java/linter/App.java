@@ -3,12 +3,43 @@
  */
 package linter;
 
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        File fileName = new File("./src/main/resources/gate.js");
+        javaScriptLinter(fileName);
+    }
+
+    /**
+     * REF - https://kodejava.org/how-to-read-file-using-files-newbufferedreader/
+     *     - https://www.programcreek.com/java-api-examples/?class=java.nio.file.Files&method=newBufferedReader
+     *     - https://www.journaldev.com/709/java-read-file-line-by-line
+     */
+    public static void javaScriptLinter(File filePath){
+        BufferedReader reader;
+        try {
+            reader = new BufferedReader(new FileReader("resources/gates.js"));
+            String current = "";
+            int line = 0;
+
+            while(current != null){
+                if(!current.isEmpty() && !current.endsWith("{") && !current.endsWith("}") && !current.endsWith("if") && !current.endsWith("else") && !current.endsWith(";")) {
+                    System.out.println("Line " + line + ": missing semicolon.");
+                }
+                current = reader.readLine();
+                line++;
+            }
+
+            reader.close();
+        }
+        catch (IOException e){
+            System.out.println(e);
+        }
     }
 }

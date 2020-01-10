@@ -4,11 +4,19 @@
 package linter;
 
 import org.junit.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
+    @Test public void testjavaScriptLinter(){
+        Path file = Paths.get("resources/gates.js");
+        App.javaScriptLinter(file);
+        assertEquals("", outContent.toString());
     }
 }
