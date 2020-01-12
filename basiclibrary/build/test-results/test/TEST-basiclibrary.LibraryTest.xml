@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="basiclibrary.LibraryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-10T08:27:45" hostname="38f9d361878d.ant.amazon.com" time="0.01">
+  <properties/>
+  <testcase name="testTally_result" classname="basiclibrary.LibraryTest" time="0.01"/>
+  <system-out><![CDATA[key: Hedge
+key: Bush
+key: Shrub
+Bush received the most votes!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
