@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>linter</name>
-	<comment>Project linter created by Buildship.</comment>
+	<name>basiclibrary</name>
+	<comment>Project basiclibrary created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
 		<buildCommand>
+<<<<<<< HEAD
+=======
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
+>>>>>>> d0a9c4446aca2c430838f03ef194a34251fdee87
 			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
+<<<<<<< HEAD
+=======
 		<nature>org.eclipse.jdt.core.javanature</nature>
+>>>>>>> d0a9c4446aca2c430838f03ef194a34251fdee87
 		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 	</natures>
 </projectDescription>
