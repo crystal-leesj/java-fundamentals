@@ -1,15 +1,14 @@
 package inheritance;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Restaurant {
     public String name;
-    public double startNumbers;
+    public int startNumbers;
     public String price;
 
 //    Restaurant Constructor
-    public Restaurant(String name, double startNumbers, String price) {
+    public Restaurant(String name, int startNumbers, String price) {
         this.name = name;
         this.startNumbers = startNumbers;
         this.price = price;
@@ -21,14 +20,17 @@ public class Restaurant {
     }
 
     public void addReview(Review review) {
-        ArrayList<Integer> numStarsArr = new ArrayList<>();
-        numStarsArr.add((int) review.startNumbers);
-        double sum = this.startNumbers + review.startNumbers;
-        if (this.startNumbers < 0) {
-            this.startNumbers = sum / numStarsArr.size();
-        } else {
-            this.startNumbers = sum / (numStarsArr.size() + 1);
+        ArrayList<Integer> starArr = new ArrayList<>();
+        starArr.add(review.startNumbers);
+
+        if (this.startNumbers < 0){
+            float sum =this.startNumbers +review.startNumbers;
+            this.startNumbers = (int) (sum / starArr.size());
+        }else{
+            float sum =this.startNumbers +review.startNumbers;
+            this.startNumbers = (int) (sum / (starArr.size() + 1));
         }
 
     }
+
 }

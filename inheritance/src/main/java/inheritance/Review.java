@@ -3,9 +3,9 @@ package inheritance;
 public class Review {
     public String body;
     public String author;
-    public double startNumbers;
+    public int startNumbers;
 
-    public Review (String body, String author, double startNumbers){
+    public Review (String body, String author, int startNumbers){
         this.body = body;
         this.author = author;
         this.startNumbers = startNumbers;
