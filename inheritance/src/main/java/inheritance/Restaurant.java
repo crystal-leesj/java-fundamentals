@@ -1,13 +1,15 @@
 package inheritance;
 
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 public class Restaurant {
     public String name;
     public double startNumbers;
     public String price;
 
-    public Restaurant(String name, int startNumbers, String price) {
+//    Restaurant Constructor
+    public Restaurant(String name, double startNumbers, String price) {
         this.name = name;
         this.startNumbers = startNumbers;
         this.price = price;
@@ -15,7 +17,18 @@ public class Restaurant {
 
     @Override
     public String toString() {
-        DecimalFormat df = new DecimalFormat("##.0");
-        return this.name + df.format(this.startNumbers) + this.price;
+        return ("Name: " + this.name + ", Number of stars: " + this.startNumbers + ", Price: " + this.price);
+    }
+
+    public void addReview(Review review) {
+        ArrayList<Integer> numStarsArr = new ArrayList<>();
+        numStarsArr.add((int) review.startNumbers);
+        double sum = this.startNumbers + review.startNumbers;
+        if (this.startNumbers < 0) {
+            this.startNumbers = sum / numStarsArr.size();
+        } else {
+            this.startNumbers = sum / (numStarsArr.size() + 1);
+        }
+
     }
 }
