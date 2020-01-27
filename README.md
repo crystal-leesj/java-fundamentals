@@ -62,7 +62,7 @@ Call that method in your `main` method on the file `gates.js`, and print out the
 
  ***
  
- ## Lab 6: Inheritance and Interfaces
+## Lab 6: Inheritance and Interfaces
 ### ***Feature Tasks***
 1. Create a class to represent a `Restaurant`. Each `Restaurant` should have a name, a number of stars betweeen 0 and 5, and a price category (i.e. number of dollar signs).
   - Implement a `Restaurant` constructor.
@@ -90,6 +90,48 @@ Call that method in your `main` method on the file `gates.js`, and print out the
 [Link to code - Review.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Review.java)
 
 [Link to code - ReviewTest.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/ReviewTest.java)
+
+ ***
+ 
+## Lab 7: Composition and Inheritance
+### ***Feature Tasks***
+1. The users want shops! Create a `Shop` class; a `Shop` should have a name, description, and number of dollar signs.
+- Implement a constructor for a `Shop`.
+- Implement a reasonable `toString` method for `Shop`s.
+- Add tests for the basics of your `Shop` class.
+2. The users also want to review shops!
+- It would be great if a `Review` could be about either a `Shop` or a `Restaurant`. Choose an implementation, and make this possible.
+- Ensure that your `Shop` class has an instance method to add a review about that shop, and that it works just as well as the `Restaurant` instance method with the same purpose.
+- Write tests for this functionality.
+3. The users want theaters! Create a `Theater` class; a `Theater` should have a name and all of the movies currently showing there. (Strings are fine for the movies; no need to create another class.)
+- Implement a constructor for a `Theater`.
+- Write `addMovie` and `removeMovie` instance methods that allow the theater to update which movies are being shown.
+- Implement a reasonable `toString` method for `Theater`s.
+- Test your `Theater` functionality.
+4. Review all the things!
+- Ensure that your `Theater` is just as reviewable as your `Restaurant` and your `Shop`.
+- Test this functionality.
+5. Users are frustrated: they like having a body, an author, and a number of stars, but when they’re reviewing a `Theater`, they also want to specify which movie they saw.
+- Some reviews should now have a `String movie` instance variable, to hold which movie that reviewer is referencing.
+- Make sure that someone reviewing a `Restaurant` or a `Shop` doesn’t have to include which movie they saw!
+- It’s also okay if someone doesn’t want to include the movie they saw when they’re reviewing a theater (maybe they just went in for the popcorn).
+- Add testing for any new functionality you’ve created.
+
+[Link to code - Restaurant.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Restaurant.java)
+
+[Link to code - RestaurantTest.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/RestaurantTest.java)
+
+[Link to code - Review.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Review.java)
+
+[Link to code - ReviewTest.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/ReviewTest.java)
+
+[Link to code - Shop.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Shop.java)
+
+[Link to code - ShopTest.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/ShopTest.java)
+
+[Link to code - Theater.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/main/java/inheritance/Theater.java)
+
+[Link to code - TheaterTest.java](https://github.com/crystal-leesj/java-fundamentals/blob/master/inheritance/src/test/java/inheritance/TheaterTest.java)
 
  ***
  
